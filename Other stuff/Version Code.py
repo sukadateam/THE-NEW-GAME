@@ -37,6 +37,15 @@ if code == "612552":
   print '3. Fixed several problems with the attack mode.'
   print '4. Spears can now be used in the game as a weapon. You will start with 5 of them.'
   print '5. You will now start with 12 throwing rocks instead of 10.'
-
-
-
+if code == "912544":
+  print 'Current Version 0.2.3:'
+  print '1. Fixed a problem where the story would not progress past the first chapter.'
+  print '2. Trading in the shop now works. There are 2 trades available. More will be added in future updates.'
+  print '3. Fixed a problem where if you were to not enter anything, then the story would break. Not allowing you to continue.'
+  print '4. Added 3 more possible scenes when user uses a spear in battle.'
+  print '5. Added place holders for a save and battle_arena function.'
+  print '6. Tutorial bag will no longer display if you skip the intro.'
+  print '7. User can now only use flashlight and/or torch once per battle.'
+  print '8. Quick Settings, Update Info and Version Info no longer appear in app start up. It will only appear when dev=True.'
+  print '9. Added a developer tool to change the chapters in game manually. This function is hidden: edit_chapters'
+  print '10. Added a few more chapters in the chapters function.'
