@@ -1,9 +1,9 @@
 Code writer: Brandon Robinson
 Layout designs: Brandon Robinson
-Writing Creativity: Brandon Robinson, Albert Tripp
-Software Testers: Brandon Robinson, Albert Tripp
-Light Code Writer For Small Tasks: Brandon Robinson, Albert Tripp
-Ideas and Thoughts: Brandon Robinson, Albert Tripp
+Writing Creativity: Brandon Robinson, Albert Plummer
+Software Testers: Brandon Robinson, Albert Plummer
+Light Code Writer For Small Tasks: Brandon Robinson, Albert Plummer
+Ideas and Thoughts: Brandon Robinson, Albert Plummer
 Github Owner: Brandon Robinson
 Code Organizer: N/A
 Troubleshooter: N/A
