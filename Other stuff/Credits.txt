@@ -5,5 +5,5 @@ Software Testers: Brandon Robinson, Albert Plummer
 Light Code Writer For Small Tasks: Brandon Robinson, Albert Plummer
 Ideas and Thoughts: Brandon Robinson, Albert Plummer
 Github Owner: Brandon Robinson
-Code Organizer: N/A
-Troubleshooter: N/A
+Code Organizer: Brandon Robinson
+Troubleshooter: Brandon Robinson
