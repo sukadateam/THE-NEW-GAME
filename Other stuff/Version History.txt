@@ -1,7 +1,8 @@
-Version 0.1.0: Date 9/24/21 -- Code: 723521
-Version 0.2.0: Date 9/26/21 -- Code: 853512
-Version 0.2.1: Date 9/27/21 -- Code: 965515
-Version 0.2.2: Date 9/28/21 -- Code: 612552
-Version 0.2.3: Date 9/29/21 -- Code: 912544
-Version 0.2.4: Date 9/30/21 -- Code: 412563
-Version 0.2.5: Date 10/15/21 -- Code: 723012
+Version 0.1.0: Date 9/24/21 -- Code: 0.1.0
+Version 0.2.0: Date 9/26/21 -- Code: 0.2.0
+Version 0.2.1: Date 9/27/21 -- Code: 0.2.1
+Version 0.2.2: Date 9/28/21 -- Code: 0.2.2
+Version 0.2.3: Date 9/29/21 -- Code: 0.2.3
+Version 0.2.4: Date 9/30/21 -- Code: 0.2.4
+Version 0.2.5: Date 10/15/21 -- Code: 0.2.5
+Version 0.2.6: Date 10/19/21 -- Code: 0.2.6
