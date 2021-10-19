@@ -1,4 +1,10 @@
+#Move this file to the same directory of the game.
 dev_battle=True
 dev_edit_chapters=True
 dev_give_stuff=True
 name='Brandon'
+
+
+
+#Please note. This file is not needed at all. It is for extra tools that I use.
+#You can still use it if you feel like it.
