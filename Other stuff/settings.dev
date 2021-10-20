@@ -2,6 +2,9 @@
 dev_battle=True
 dev_edit_chapters=True
 dev_give_stuff=True
+repeat_amount=50
+beta_var=True
+skip_check=True
 name='Brandon'
 
 
