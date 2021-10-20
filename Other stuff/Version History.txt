@@ -6,3 +6,4 @@ Version 0.2.3: Date 9/29/21 -- Code: 0.2.3
 Version 0.2.4: Date 9/30/21 -- Code: 0.2.4
 Version 0.2.5: Date 10/15/21 -- Code: 0.2.5
 Version 0.2.6: Date 10/19/21 -- Code: 0.2.6
+Version 0.2.7: Date 10/20/21 -- Code: 0.2.7
