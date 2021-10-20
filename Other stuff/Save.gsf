@@ -1,10 +1,9 @@
-#Move this file to the same directory of the game.
-#*Game Save File*
+#Move this file to the same directory of the game.#*Game Save File*
 dev = True
 unlock_all_achievements = False
 repeat_chapters = False
 normal_clear = False
-repeat_amount = 25
+repeat_amount = 50
 chars_in_line = 55
 run_off = True
 error_message = True
@@ -24,7 +23,7 @@ story_part12 = False
 cave_cord1 = ['52, 61, 30', False]
 flashlight = False
 battery_charger = False
-enemy=['Goblin','Karen','Bat','Skeleton','Zombie','Flip Phone','Youra the explora','No Cell Service','My Brother']
+enemy=['Goblin','Karen','Bat','Skeleton','Zombie','Put Name Here','Crab Rave','No Cell Service','Gertie','Jimmy','Gage']
 current_enemy=''
 money = 10.0
 working_battery_charger = False
@@ -94,8 +93,13 @@ guts_and_glory = False
 i_have_the_power = False
 its_payday = False
 whicked_chronicle = False
+keep_it_moving = False
 
 #Developers: Brandon Robinson, Albert Plummer
 #Github Page: github.com/sukadateam
 #Please report any bugs you encounter.
-version_save = '0.2.6'
+allow_older_savefile = False
+version_save = '0.2.7'
+#Please do not change the version_save variable. It may cause crashes.
+#Instead change allow_older_savefile to True. Uppercase the T and rue is lowercase.
+#Please note. Changing to dev mode and back can cause problems. Please choose one or the other.
