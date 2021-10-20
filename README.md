@@ -3,8 +3,8 @@ This game is developed in python 2.
 
 Creator: Brandon Robinson
 
-Code Updated Date: 10/19/21
+Code Updated Date: 10/20/21
 
-Current Version: 0.2.6
+Current Version: 0.2.7
 
-Github Updated Date: 10/19/21
+Github Updated Date: 10/20/21
