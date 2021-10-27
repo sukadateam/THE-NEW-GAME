@@ -1,5 +1,6 @@
 # THE-NEW-GAME
 This game is developed in python 2.
+Then converted to python 3.
 
 Creator: Brandon Robinson
 
