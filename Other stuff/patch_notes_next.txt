@@ -1,0 +1,17 @@
+Current Version 0.2.9
+1. Converted code from python 2 to python 3.
+2. Added extra chapters to chapters page.
+3. Added exceptions incase settings.dev is messed up.
+4. Added 2 new weapons. Frying pans and Daggers.
+5. Fixed a problem where shop would give the wrong item name on your receipt after selling something.
+6. Updated save function with new variables.
+7. Updated damage function with new weapons.
+8. Updated shop with new weapons.
+9. Updated sleep with new prices.
+10. Working on making functions more adaptive for new items. Easier to introduce new items and requires less code to do so.
+11. Fixed several problems with the bag.
+12. Shop is now adaptive to easily add new items. Other function to do the same are on the way.
+13. Added several new functions which will be worked on through out the game. No designated time for completion yet.
+14. Added a new developer tool. This one is a fun one.
+15. Added new ways to use certian functions.
+16. Chapters function is now adaptive.
