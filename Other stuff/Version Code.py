@@ -119,3 +119,9 @@ if code == "0.2.7":
   print '12. Added a stats menu. Currently only usable in dev mode.'
   print '13. Added levels, xp, and strength for player after completing a battle.'
   print '14. Users can now exit dev mode in the home menu.'
+if code == "0.2.8":
+  print 'Current Version 0.2.8'
+  print '1. Fixed SyntaxWarning at game startup.'
+  print '2. Changed how the damage menu looks to the end user.'
+  print '3. Changed the print repeat Value from 25 to 55.'
+  print '4. Fixed many bugs in different menus in different secenerios.'
