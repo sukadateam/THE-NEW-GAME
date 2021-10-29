@@ -1,6 +1,6 @@
 #Move this file to the same directory of the game.
 #*Game Save File*
-dev = True
+dev = False
 unlock_all_achievements = False
 repeat_chapters = False
 normal_clear = False
@@ -82,6 +82,7 @@ green_gem = 0
 magenta_gem = 0
 yellow_gem = 0
 blue_gem = 0
+buy_count = 13
 coal_buy = 2.1
 computer_chips_buy = 8.4
 wires_buy = 3.9
@@ -95,6 +96,7 @@ pickaxe_buy = 2.1
 machete_buy = 2.45
 frying_pan_buy = 0
 dagger_buy = 0
+sell_count = 13
 coal_sell = 1.5
 computer_chips_sell = 5.0
 wires_sell = 2.4
