@@ -1,2 +1,7 @@
 Current Version 0.3.0
 1. None
+
+Error Stuff:
+  1. Added TypeError
+  2. Added UnboundLocalError
+  3. Added ZeroDivisionError
