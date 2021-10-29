@@ -14,9 +14,10 @@ Github Updated Date: 10/29/21 9:10 AM Eastern Time
 
 Files updated:
   Version Code.py #Converted to python 3
+  path_notes_next.txt #Reset for next version
 
 Files created:
-  None.
+  Version 0.2.9.py
  
  Things to note:
   1. error_stuff.py is not used for this version but for next version.
