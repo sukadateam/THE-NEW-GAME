@@ -6,15 +6,16 @@ Creator: Brandon Robinson
 
 Code Updated Date: 10/29/21
 
-Current Version: 0.2.8
+Current Version: 0.2.9
 
-Next Version: 0.2.9
+Next Version: 0.3.0 #This will be a Patch Version
 
-Github Updated Date: 10/29/21 9:10 AM Eastern Time
+Github Updated Date: 10/29/21 9:26 AM Eastern Time
 
 Files updated:
   Version Code.py #Converted to python 3
   path_notes_next.txt #Reset for next version
+  error_stuff.py #Added new items and changed how the file works.
 
 Files created:
   Version 0.2.9.py
