@@ -1,7 +1,14 @@
 Current Version 0.3.0
-1. None
+  1. Fixed story not playing.
+  2. Fixed a problem where variable dev could not be found.
+  3. Fixed a problem where bag won't open
+  4. Fixed a couple of bugs in shop.
+  5. Fixed a bug where chapters would ask you to hit enter to exit twice if you gave a wrong input, instead of once.
+  6. Fixed a error where damage would return NameError.
+  7. Sleep and stats functions are now unlocked.
+  8. Battle now has a message to tell player how to unlock the function.
+  9. Added practice function quick build. This is a test version to see how it connects with the game.
+  10. Added new variables to save function.
 
 Error Stuff:
-  1. Added TypeError
-  2. Added UnboundLocalError
-  3. Added ZeroDivisionError
+  1. Added new items but have no purpose currently.
