@@ -4,20 +4,20 @@ Then converted to python 3.
 
 Creator: Brandon Robinson
 
-Code Updated Date: 10/30/21
+Code Updated Date: 10/31/21
 
 Current Version: 0.2.9
 
 Next Version: 0.3.0 #This will be a Patch Version
 
-Github Updated Date: 10/30/21 7:40 PM Eastern Time
+Github Updated Date: 10/31/21 5:22 PM Eastern Time
 
 Files updated:
-  1. error_stuff.py #Knows 3 more error types
-  2. Save.gsf #For next version
+  1. Organized Github Page
+  2. error_stuff.py #Added new things. New items has no use yet.
 
 Files created:
-  1. save_file_maker.py #Use to make a new save file.
+  1. None
 
 Things to note:
   1. None
@@ -38,3 +38,8 @@ To start the game:
 5. Make sure you have a compatible save file(Save.gsf).
 6. If dev mode is enabled and you encounter problems try disabling it either with the variable or in the game menu.
 7. Play the game.
+
+Files required to start:
+  1. Save.gsf
+  2. error_stuff.py #Not required but will cause problems without it.
+  3. Main.py
