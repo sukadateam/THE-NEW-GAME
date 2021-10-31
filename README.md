@@ -42,4 +42,4 @@ To start the game:
 Files required to start:
   1. Save.gsf
   2. error_stuff.py #Not required but will cause problems without it.
-  3. Main.py
+  3. main.py
