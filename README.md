@@ -13,7 +13,7 @@ Next Version: 0.3.0 #This will be a Patch Version
 Github Updated Date: 11/01/21 9:39 AM Eastern Time
 
 Files updated:
-  1. None
+  1. patch_notes_next.txt
 
 Files created:
   1. None
@@ -25,9 +25,9 @@ Save file problems:
   1. Make sure the save file is exactly named "Save.gsf".
   2. Open the save file and go to the bottom. If the version does not match game version the 
 file will not work.
-  4. If you cannot find a newer/older version of a save file for the version of the game you have you can change the variable version_save = ''.
-  6. Note you may encounter problems if the save file is older than the game version. Try and use a newer save file than older if possible. Older save files are missing required variables.
-  7. If a save file will no longer load. Try making a new one with save_file_maker.py.
+  3. If you cannot find a newer/older version of a save file for the version of the game you have you can change the variable version_save = ''.
+  4. Note you may encounter problems if the save file is older than the game version. Try and use a newer save file than older if possible. Older save files are missing required variables.
+  5. If a save file will no longer load. Try making a new one with save_file_maker.py.
 
 To start the game:
 1. To start the game. You need to change the file name Version #.#.#.py to main.py.
