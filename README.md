@@ -10,11 +10,10 @@ Current Version: 0.2.9
 
 Next Version: 0.3.0 #This will be a Patch Version
 
-Github Updated Date: 10/31/21 5:22 PM Eastern Time
+Github Updated Date: 11/01/21 9:39 AM Eastern Time
 
 Files updated:
-  1. Organized Github Page
-  2. error_stuff.py #Added new things. New items has no use yet.
+  1. None
 
 Files created:
   1. None
