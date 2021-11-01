@@ -9,6 +9,7 @@ Current Version 0.3.0
   8. Battle now has a message to tell player how to unlock the function.
   9. Added practice function quick build. This is a test version to see how it connects with the game.
   10. Added new variables to save function.
-
+  11. Added arguments (new_save) and (new_error_stuff) on game startup.
+  12. Game will now attempt to remove __pycache__ folder from game directory.
 Error Stuff:
   1. Added new items but have no purpose currently.
