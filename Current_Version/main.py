@@ -1,18 +1,337 @@
-#c:\Python27\python.exe "Version 0.2.9.py"
+#"c:\Python 310\python.exe" "main.py"
 # -*- coding: utf-8 -*-
 import os, random, time, sys
+#Game setup
+dev=False
+path='\\Users\\brobi\\Desktop\\game'
+os.chdir(path)
+version = '0.3.0'
+story_amount=12
 try:
     n = list(sys.argv)
     print ('Argument:',n[1])
     time.sleep(1)
+    if n[1]=="new_save":
+        print('Creating new save...')
+        s=open('Save.gsf','w')
+        s.write('#Move this file to the same directory of the game.')
+        s.write('\n#*Game Save File*')
+        s.write('\ndev = False')
+        s.write('\nunlock_all_achievements = False')
+        s.write('\nrepeat_chapters = False')
+        s.write('\nnormal_clear = False')
+        s.write('\nrepeat_amount = 50')
+        s.write('\nchars_in_line = 55')
+        s.write('\nrun_off = True')
+        s.write('\nerror_message = True')
+        s.write('\nlevel = 0')
+        s.write('\nxp = 124')
+        s.write('\nstrength = 30')
+        s.write('\npush_up_practice = 4')
+        s.write('\nlift_rocks_practice = 5')
+        s.write('\nbegin = True')
+        s.write('\nday_lock1 = False')
+        s.write('\nday_lock2 = False')
+        s.write('\nday_lock3 = False')
+        s.write('\nday_lock4 = False')
+        s.write('\nday_lock5 = False')
+        s.write('\nday_lock6 = False')
+        s.write('\nday_lock7 = False')
+        s.write('\nday_lock8 = False')
+        s.write('\nday_lock9 = False')
+        s.write('\nday_lock10 = False')
+        s.write('\nday_lock11 = False')
+        s.write('\nstory_part1 = False')
+        s.write('\nstory_part2 = False')
+        s.write('\nstory_part3 = False')
+        s.write('\nstory_part4 = False')
+        s.write('\nstory_part5 = False')
+        s.write('\nstory_part6 = False')
+        s.write('\nstory_part7 = False')
+        s.write('\nstory_part8 = False')
+        s.write('\nstory_part9 = False')
+        s.write('\nstory_part10 = False')
+        s.write('\nstory_part11 = False')
+        s.write('\nstory_part12 = False')
+        s.write("\ncave_cord1 = ['52, 61, 30', False]")
+        s.write('\nflashlight = False')
+        s.write('\nbattery_charger = False')
+        s.write("\nenemy=['Goblin','Karen','Bat','Skeleton','Zombie','Put Name Here','Crab Rave','No Cell Service','Gertie','Jimmy','Gage']")
+        s.write("\ncurrent_enemy=''")
+        s.write('\nmoney = 10.0')
+        s.write('\nworking_battery_charger = False')
+        s.write('\nskip = True')
+        s.write('\none_time = False')
+        s.write('\nhealth = 0')
+        s.write('\nstart = True')
+        s.write('\nattack = False')
+        s.write('\nvictory_status = False')
+        s.write('\nseen_notes = 0')
+        s.write('\ntotal_wins = 0')
+        s.write('\ncharge_price = 0.9')
+        s.write('\ncharge_time = 1.2')
+        s.write('\ncustom_attack = False')
+        s.write('\nfrying_pan = 0')
+        s.write('\ndagger = 0')
+        s.write('\npickaxe = 3')
+        s.write('\nmachete = 2')
+        s.write('\nsticks = 2')
+        s.write('\ncoal = 2')
+        s.write('\ncomputer_chips = 0')
+        s.write('\nwires = 0')
+        s.write('\ngood_batteries = 0')
+        s.write('\nbad_batteries = 0')
+        s.write('\nbattery = 5')
+        s.write('\nthrowing_rocks = 12')
+        s.write('\nspears = 5')
+        s.write('\ntorches = 25')
+        s.write('\nflashlight_use = False')
+        s.write('\nthrowing_rocks_use = False')
+        s.write('\npickaxe_use = False')
+        s.write('\nmachete_use = False')
+        s.write('\nspears_use = False')
+        s.write('\ntorch_use = False')
+        s.write('\nfrying_pan_use = False')
+        s.write('\ndagger_use = False')
+        s.write('\nno_light = False')
+        s.write('\nthrowing_rocks_damage=[7,15]')
+        s.write('\nspears_damage=[11,17]')
+        s.write('\npickaxe_damage=[15,19]')
+        s.write('\nmachete_damage=[17,23]')
+        s.write('\nred_gem = 0')
+        s.write('\ngreen_gem = 0')
+        s.write('\nmagenta_gem = 0')
+        s.write('\nyellow_gem = 0')
+        s.write('\nblue_gem = 0')
+        s.write('\nbuy_count = 13')
+        s.write('\ncoal_buy = 2.1')
+        s.write('\ncomputer_chips_buy = 8.4')
+        s.write('\nwires_buy = 3.9')
+        s.write('\ngood_batteries_buy = 4.75')
+        s.write('\nbad_batteries_buy = 3.0')
+        s.write('\nsticks_buy = 1.25')
+        s.write('\nthrowing_rocks_buy = 1.25')
+        s.write('\nspears_buy = 1.75')
+        s.write('\ntorches_buy = 0.7')
+        s.write('\nmachete_buy = 2.45')
+        s.write('\npickaxe_buy = 2.1')
+        s.write('\nfrying_pan_buy = 0')
+        s.write('\ndagger_buy = 0')
+        s.write('\nsell_count = 13')
+        s.write('\ncoal_sell = 1.5')
+        s.write('\ncomputer_chips_sell = 5.0')
+        s.write('\nwires_sell = 2.4')
+        s.write('\ngood_batteries_sell = 3.5')
+        s.write('\nbad_batteries_sell = 2.15')
+        s.write('\nsticks_sell = 1.0')
+        s.write('\nthrowing_rocks_sell = 1.25')
+        s.write('\nspears_sell = 1.0')
+        s.write('\ntorches_sell = 0.7')
+        s.write('\npickaxe_sell = 2.1')
+        s.write('\nmachete_sell = 2.45')
+        s.write('\nfrying_pan_sell = 0')
+        s.write('\ndagger_sell = 0')
+        s.write('\nlet_the_battles_begin = False')
+        s.write('\nguts_and_glory = False')
+        s.write('\ni_have_the_power = False')
+        s.write('\nits_payday = False')
+        s.write('\nwhicked_chronicle = False')
+        s.write('\nkeep_it_moving = False')
+        s.write('\n\n#Developers: Brandon Robinson, Albert Plummer')
+        s.write('\n#Github Page: github.com/sukadateam')
+        s.write('\n#Please report any bugs you encounter.')
+        s.write('\nallow_older_savefile = False')
+        s.write("\nversion_save = '0.3.0'")
+        s.write('\n#Please do not change the version_save variable. It may cause crashes.')
+        s.write('\n#Instead change allow_older_savefile to True. Uppercase the T and rue is lowercase.')
+        s.write('\n#Please note. Changing to dev mode and back can cause problems. Please choose one or the other.')
+        s.close()
+        print('Save File Location:',path)
+        move_on=input('Hit enter to exit: ')
+    if n[1]=="new_error_stuff":
+        s=open('error_stuff.py','w')
+        s.write("def windows_error(hi):\n")
+        s.write("    print('System: Cannot find the file specified:',hi)\n")
+        s.write("    print('\\nNote: If you are not a developer please ignore this.')\n")
+        s.write("def value_error(hi):\n")
+        s.write("    print('Error: ValueError.')\n")
+        s.write("    print('\\nSystem: An incorrect input has been given.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def unknown_error(hi):\n")
+        s.write("    print('System: An unregistered error has occured.')\n")
+        s.write("    print('System Replay:',hi)\n")
+        s.write("def keyboard_interrupt():\n")
+        s.write("    print('Error: keyboardInterrupt')\n")
+        s.write("    print('\\nSystem: The interrupt key was pressed.')\n")
+        s.write("    print('\\nNote: Interrupt keys: control-c or delete')\n")
+        s.write("def name_error(hi):\n")
+        s.write("    print('Error: NameError')\n")
+        s.write("    print('\\nSystem: Local or Global name is not found.')\n")
+        s.write("    print('\\nNote: The program tried to find it but returned an error.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def memory_error():\n")
+        s.write("    print('Error: MemoryError')\n")
+        s.write("    print('\\nSystem: Memory is full.')\n")
+        s.write("    print('\\nNote: Try closing other applications that are not needed.')\n")
+        s.write("def assertion_error(hi):\n")
+        s.write("    print('Error: AssertionError')\n")
+        s.write("    print('\\nSystem: A debugging assert statement failed')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def attribute_error(hi):\n")
+        s.write("    print('Error: AttributeError')\n")
+        s.write("    print('\\nSystem: Could not assign to a variable.')\n")
+        s.write("    print('\\nNote: May be a different mode. Ex: int, str, float, bool.')\n")
+        s.write("    print('\\nSystem Replay',hi)\n")
+        s.write("def eof_error():\n")
+        s.write("    print('Error: EOFError')\n")
+        s.write("    print('System: There are no more lines to read.')\n")
+        s.write("def import_error(hi):\n")
+        s.write("    print('Error: ImportError')\n")
+        s.write("    print('\\nSystem: Cannot load module from file.')\n")
+        s.write("    print('\\nNote: Item may not exist.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def module_not_found(hi):\n")
+        s.write("    print('Error: ModuleNotFoundError')\n")
+        s.write("    print('\\nSystem: Cannot locate module.')\n")
+        s.write("    print('\\nNote: Make sure item being called exists.')\n")
+        s.write("    print('\\nSystem replay:',hi)\n")
+        s.write("def index_error(hi):\n")
+        s.write("    print('Error: IndexError')\n")
+        s.write("    print('\\nSystem: Sequence subscript out of range.')\n")
+        s.write("    print('\\nNote: Possibly tried to call a part of var that doesn\\'t exist.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def key_error(hi):\n")
+        s.write("    print('Error: KeyError')\n")
+        s.write("    print('\\nSystem: Mapping(dictionary) key is not found in the existing set.')\n")
+        s.write("    print('\\nNote: Perhaps changing the input key.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def over_flow_error(hi):\n")
+        s.write("    print('Error: OverflowError')\n")
+        s.write("    print('\\nSystem: Math operation is to large to be calculated/represented.')\n")
+        s.write("    print('\\nNote: Try using the round() function to solve this if possible.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def indentation_error(hi):\n")
+        s.write("    print('Error: IndentationError')\n")
+        s.write("    print('\\nSystem: An unexpected indent has appeared.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def tab_error(hi):\n")
+        s.write("    print('Error: TabError')\n")
+        s.write("    print('\\nSystem: Found an inconsistent use of tabs and spaces.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def system_error(hi):\n")
+        s.write("    print('Error: SystemError')\n")
+        s.write("    print('\\nSystem: Internal error found. Not so serius error.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def type_error(hi):\n")
+        s.write("    print('Error: TypeError')\n")
+        s.write("    print('\\nSystem: Operation or function cannot be applied to item specified.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def unbound_local_error(hi):\n")
+        s.write("    print('Error: UnboundLocalError')\n")
+        s.write("    print('\\nSystem: Local variable in function/method has no assigned value.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def zero_division_error(hi):\n")
+        s.write("    print('Error: ZeroDivisionError')\n")
+        s.write("    print('\\nSystem: Cannot divide by zero.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def environment_error(hi):\n")
+        s.write("    print('Error: EnvironmentError')\n")
+        s.write("    print('\\nSystem: No information provided.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def i_o_error(hi):\n")
+        s.write("    print('Error: IOError')\n")
+        s.write("    print('\\nSystem: No information provided.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def windows_error(hi):\n")
+        s.write("    print('Error: WindowsError')\n")
+        s.write("    print('\\nSystem: No information provided. Only available in windows.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def blocking_io_error(hi):\n")
+        s.write("    print('Error: BlockingIOError')\n")
+        s.write("    print('\\nSystem: Non-Blocking operation detected.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def child_process_error(hi):\n")
+        s.write("    print('Error: ChildProcessError')\n")
+        s.write("    print('\\nSystem: Child Process has failed.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def connection_error(hi):\n")
+        s.write("    print('Error: ConnectionError')\n")
+        s.write("    print('\\nSystem: Connection issue has occured. May sure what you are trying to connect to is accessible')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def broken_pipe_error(hi):\n")
+        s.write("    print('Error: BrokenPipeError')\n")
+        s.write("    print('\\nSystem: Attempted to write to pipe but the other end is closed.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def connection_aborted_error(hi):\n")
+        s.write("    print('Error: ConnectionAbortedError')\n")
+        s.write("    print('\\nSystem: Connection attempt was aborted.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def connection_refused_error(hi):\n")
+        s.write("    print('Error: ConnectionRefusedError')\n")
+        s.write("    print('\\nSystem: Connection attempt was denied.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def connection_reset_error(hi):\n")
+        s.write("    print('Error: ConnectionResetError')\n")
+        s.write("    print('\\nSystem: Connection attempt was reset.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def warning(hi):\n")
+        s.write("    print('Notice: Warning')\n")
+        s.write("    print('\\nSystem: A warning was called. No more information given.')\n")
+        s.write("    print('\\System Replay:',hi)\n")
+        s.write("def user_warning(hi):\n")
+        s.write("    print('Notice: UserWarning')\n")
+        s.write("    print('\\System: A warning was called for code created by a user.')\n")
+        s.write("    print('\\System Replay:',hi)\n")
+        s.write("def deprecation_warning(hi):\n")
+        s.write("    print('Notice: DeprecationWarning')\n")
+        s.write("    print('\\System: A warning was called for a feature that is depreciated.')\n")
+        s.write("    print('\\System Replay:',hi)\n")
+        s.write("def pending_deprecation_warning(hi):\n")
+        s.write("    print('Notice: PendingDeprecationWarning')\n")
+        s.write("    print('\\System: A warning was called for a feature that is going to be depreciated.')\n")
+        s.write("    print('\\System Replay:',hi)\n")
+        s.write("def syntax_warning(hi):\n")
+        s.write("    print('Notice: SyntaxWarning')\n")
+        s.write("    print('\\System: A warning was called for a suspicious syntax.')\n")
+        s.write("    print('\\System Replay:',hi)\n")
+        s.write("def runtime_warning(hi):\n")
+        s.write("    print('Notice: RuntimeWarning')\n")
+        s.write("    print('\\nSystem: A warning was called for runtime behavior')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def future_warning(hi):\n")
+        s.write("    print('Notice: FutureWarning')\n")
+        s.write("    print('\\nSystem: A warning was called for deprecated features.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def import_warning(hi):\n")
+        s.write("    print('Notice: ImportWarning')\n")
+        s.write("    print('\\nSystem: A warning was called about a probale mistake in module imports.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def unicode_warning(hi):\n")
+        s.write("    print('Notice: UnicdoeWarning')\n")
+        s.write("    print('\\nSystem: A warning was called for a possible unicode issue.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def encoding_warning(hi):\n")
+        s.write("    print('Notice: EncodingWarning')\n")
+        s.write("    print('\\nSystem: A warning was called for a possible encoding issue.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def bytes_warning(hi):\n")
+        s.write("    print('Notice: BytesWarning')\n")
+        s.write("    print('\\nSystem: A warning was called for a problem related to bytes and bytearray.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("def resource_warning(hi):\n")
+        s.write("    print('Notice: ResourceWarning')\n")
+        s.write("    print('\\nSystem: A warning was called for a problem related to a resource issue.')\n")
+        s.write("    print('\\nSystem Replay:',hi)\n")
+        s.write("#show_error on line 86 of main.py")
+        s.close()
+        move_on=input('Hit enter to exit: ')
 except:
     pass
-#Game setup
-path='\\Users\\brobi\\Desktop\\Current_Version'
-os.chdir(path)
-version = '0.2.9'
-story_amount=12
 #possible inputs
+next_update_input=['next update','next updates']
+other_input=['other','other stuff','other items','anything else','other options']
+show_sell_input=['show sell','show sell vars','show sell var','show sell variables','show sell variable']
+show_buy_input=['show buy','show buy vars','show buy var','show buy variables','show buy variable']
 bag_input=['bag','bags','storage','backpack','purse']
 start_input=['start','begin','commence']
 menu_input=['menu','home','home menu','title','title screen']
@@ -49,12 +368,30 @@ yes_input=['yes','y','correct',"that's right",'yup','indeed','sure','of course',
 no_input=['no','nope','negative','nah','naw','nay','no way','nae','never','not at all','by no means']
 error_message_skip=False
 try:
+    os.remove('__pycache__')
+except:
+    pass
+try:
     from error_stuff import *
 except:
     error_message_skip=True
 #Important --- Important
+def ah():
+    print('Please restart to try again.')
+    while True:
+        time.sleep(9999)
 save_not_found=False
 works=False
+if dev==False:
+    menu_open=False
+    bag_open=False
+if dev==True:
+    menu_open=True
+    bag_open=True
+try:
+    os.rename("Save.py","Save.gsf")
+except:
+    pass
 try:
     os.rename("Save.py","Save.gsf")
 except:
@@ -76,6 +413,7 @@ if works==True:
     if version_save not in version:
         print('This save file is not compatible with this version.')
         os.rename("Save.py","Save.gsf")
+        ah()
     if version_save == version:
         from Save import *
         os.rename("Save.py","Save.gsf")
@@ -85,28 +423,53 @@ if works==True:
             pass
 def show_error():
     if error_message==True:
-      print('\n\n\n-------------(ERROR)-------------')
-      ex, ex_value, ex_traceback = sys.exc_info()
-      ex=str(ex)
-      ex=ex[8:len(ex)-2]
-      if ex=="ValueError": value_error(ex_value)
-      elif ex=="WindowsError": windows_error(ex_value)
-      elif ex=="KeyboardInterrupt": keyboard_interrupt()
-      elif ex=="NameError": name_error(ex_value)
-      elif ex=="MemoryError": memory_error()
-      elif ex=="AssertionError": assertion_error(ex_value)
-      elif ex=="AttributeError": attribute_error(ex_value)
-      elif ex=="EOFError": eof_error()
-      elif ex=="ImportError": import_error(ex_value)
-      elif ex=="ModuleNotFoundError": module_not_found(ex_value)
-      elif ex=="IndexError": index_error(ex_value)
-      elif ex=="KeyError": key_error(ex_value)
-      elif ex=="OverflowError": over_flow_error(ex_value)
-      elif ex=="IndentationError": indentation_error(ex_value)
-      elif ex=="TabError": tab_error(ex_value)
-      elif ex=="SystemError": system_error(ex_value)
-      else: unknown_error(ex_value)
-      move_on=input('Hit enter to exit: ')
+        print('\n\n\n-------------(ERROR)-------------')
+        ex, ex_value, ex_traceback = sys.exc_info()
+        ex=str(ex)
+        ex=ex[8:len(ex)-2]
+        if ex=="ValueError": value_error(ex_value)
+        elif ex=="WindowsError": windows_error(ex_value)
+        elif ex=="KeyboardInterrupt": keyboard_interrupt()
+        elif ex=="NameError": name_error(ex_value)
+        elif ex=="MemoryError": memory_error()
+        elif ex=="AssertionError": assertion_error(ex_value)
+        elif ex=="AttributeError": attribute_error(ex_value)
+        elif ex=="EOFError": eof_error()
+        elif ex=="ImportError": import_error(ex_value)
+        elif ex=="ModuleNotFoundError": module_not_found(ex_value)
+        elif ex=="IndexError": index_error(ex_value)
+        elif ex=="KeyError": key_error(ex_value)
+        elif ex=="OverflowError": over_flow_error(ex_value)
+        elif ex=="IndentationError": indentation_error(ex_value)
+        elif ex=="TabError": tab_error(ex_value)
+        elif ex=="SystemError": system_error(ex_value)
+        elif ex=="TypeError": type_error(ex_value)
+        elif ex=="UnboundLocalError": unbound_local_error(ex_value)
+        elif ex=="ZeroDivisionError": zero_division_error(ex_value)
+        elif ex=="EnviromentError": environment_error(ex_value)
+        elif ex=="IOError": i_o_error(ex_value)
+        elif ex=="WindowsError": windows_error(ex_value)
+        elif ex=="BlockingIOError": blocking_io_error(ex_value)
+        elif ex=="ChildProcessError": child_process_error(ex_value)
+        elif ex=="ConnectionError": connection_error(ex_value)
+        elif ex=="BrokenPipeError": broken_pipe_error(ex_value)
+        elif ex=="ConnectionAbortedError": connection_aborted_error(ex_value)
+        elif ex=="ConnectionRefusedError": connection_refused_error(ex_value)
+        elif ex=="ConnectionResetError": connection_reset_error(ex_value)
+        elif ex=="Warning": warning(ex_value)
+        elif ex=="UserWarning": user_warning(ex_value)
+        elif ex=="DeprecationWarning": deprecation_warning(ex_value)
+        elif ex=="PendingDeprecationWarning": pending_deprecation_warning(ex_value)
+        elif ex=="SyntaxWarning": syntax_warning(ex_value)
+        elif ex=="RuntimeWarning": runtime_warning(ex_value)
+        elif ex=="FutureWarning": future_warning(ex_value)
+        elif ex=="ImportWarning": import_warning(ex_value)
+        elif ex=="UnicodeWarning": unicode_warning(ex_value)
+        elif ex=="EncodingWarning": encoding_warning(ex_value)
+        elif ex=="BytesWarning": bytes_warning(ex_value)
+        elif ex=="ResourceWarning": resource_warning(ex_value)
+        else: unknown_error(ex_value)
+        move_on=input('Hit enter to exit: ')
 if works==False:
     save_not_found=True
     print('A save file is required to continue.')
@@ -128,7 +491,6 @@ if works==False:
 if save_not_found==True:
     #Settings
     skip_check=True
-    dev=False
     unlock_all_achievements=False
     repeat_chapters=False
     normal_clear=False
@@ -294,42 +656,42 @@ class variables():
         for i in range(count_vars):
             print(current_vars[i],'=',globals()[current_vars[i]])
 def updates():
-    print('Current Version 0.2.9')
-    print('1. Converted code from python 2 to python 3.')
-    print('2. Added extra chapters to chapters page.')
-    print('3. Added exceptions incase settings.dev is messed up.')
-    print('4. Added 2 new weapons. Frying pans and Daggers.')
-    print('5. Fixed a problem where shop would give the wrong item name on your receipt after selling something.')
-    print('6. Updated save function with new variables.')
-    print('7. Updated damage function with new weapons.')
-    print('8. Updated shop with new weapons.')
-    print('9. Updated sleep with new prices.')
-    print('10. Working on making functions more adaptive for new items. Easier to introduce new items and requires less code to do so.')
-    print('11. Fixed several problems with the bag.')
-    print('12. Shop is now adaptive to easily add new items. Other function to do the same are on the way.')
-    print('13. Added several new functions which will be worked on through out the game. No designated time for completion yet.')
-    print('14. Added a new developer tool. This one is a fun one.')
-    print('15. Added new ways to use certian functions.')
-    print('16. Chapters function is now adaptive.')
-    print('17. Removed dev lock on save and load functions.')
-    print('18. Implemented error_stuff.py file into program.')
+    print('Current Version 0.3.0')
+    print('1. Fixed story not playing.')
+    print('2. Fixed a problem where variable dev could not be found.')
+    print('3. Fixed a problem where bag won\'t open')
+    print('4. Fixed a couple of bugs in shop.')
+    print('5. Fixed a bug where chapters would ask you to hit enter to exit twice if you gave a wrong input, instead of once.')
+    print('6. Fixed a error where damage would return NameError.')
+    print('7. Sleep and stats functions are now unlocked.')
+    print('8. Battle now has a message to tell player how to unlock the function.')
+    print('9. Added practice function quick build. This is a test version to see how it connects with the game.')
+    print('10. Added new variables to save function.')
+    print('11. Added arguments (new_save) and (new_error_stuff) on game startup.')
+    print('12. Game will now attempt to remove __pycache__ folder from game directory.')
+    print('13. Cleaned and organized updates function.')
+    print('14. Users can now see what is expected to come in the next big update. Next Update shows in other.')
     print('')
-    print('Things to do next: ')
-    print('1. Decide if possible inputs stays in this file or gets moved to another file.')
-    print('2. Find a use for command arguments.')
-    print('3. Add buy_count and sell_count to create new save')
-    skip = input('Hit enter to exit:')
+    move_on = input('Hit enter to exit:')
 def next_update():
-    print('Things to do for update Version 0.2.8:')
-    print('1. Think a gem trades. And maybe add them in. Not a big priority.')
-    print('2. Talk about how the the collisseum will work. Will be accesed only through dev mode.')
-    print('3. Either rewrite hints or delete it.')
+    clear()
+    print('Things to do for update Version 0.3.5:')
+    print('1. Talk about how the the collisseum will work. Will be accesed only through dev mode.')
+    print('2. Either rewrite hints or delete it.')
+    print('3. Add a few more chapters.')
+    print('4. Decide if possible inputs are to stay in this file or they get moved to another file. Note: If so, create a folder where the game stores all extra data needed.')
+    print('5. If extra data folder is created. Make main.py be able to recreate it if it gets deleted or corrupted.')
+    print('6. Create more command arguments. Ex: disable sleep timers.')
+    print('7. Clean up menu function. Make it more pleasing to look at.')
+    print('8. Remove preset vars since they are now stored in a save file.')
+    print('9. Add 1 new weapon to the game.')
     print('')
     print('Optional Stuff:')
     print('1. Check for any spelling errors or mistakes.')
     print('2. Come up with ideas for weapons in the game.')
     print('3. Make a list of new features to add in the game.')
     print('4. Add a setting to allow users to load a save file from a different version.')
+    move_on = input('Hit enter to exit')
 def edit_chapters():
     global story_part1,story_part2,story_part3,story_part4,story_part5,story_part6,story_part7,story_part8,story_part9,story_part10,story_part11,story_part12,begin
     print('True = Unlocked')
@@ -494,6 +856,7 @@ def settings():
             try:
                 chars_in_line=int(input('What is the new value: '))
             except:
+                some_error=Truesome_error=True
                 show_error()
             choice=''
         if choice == "2":
@@ -530,6 +893,7 @@ def settings():
         try:
             repeat_amount=int(input('What is the new value:'))
         except:
+            some_error=True
             show_error()
 def screen_run(line_space):
     global run_off,chars_in_line
@@ -622,6 +986,8 @@ try:
 except:
     pass
 clear()
+push_up_practice=4
+lift_rocks_practice=5
 password='123456'
 if password=="123456":
     if save_not_found==True:
@@ -675,12 +1041,6 @@ if password=="123456":
         frying_pan_use=False #When true, user is using the item.
         dagger_use=False #When true, user is using the item.
         no_light=False
-        if dev==False:
-            menu_open=False
-            bag_open=False
-        if dev==True:
-            menu_open=True
-            bag_open=True
         #Gems
         red_gem=0
         green_gem=0
@@ -748,14 +1108,10 @@ if password=="123456":
             print('System: Unabled to check level.')
     def stats():
         global dev, level, xp, strength
-        if dev==True:
-            global beta_var, level, xp
-            print('Player Level:',str(level))
-            print('Current XP:',str(xp))
-            print('Player Strength: ',str(strength))
-            move_on=input('Hit enter to exit: ')
-        if dev==False:
-            non_function()
+        print('Player Level:',str(level))
+        print('Current XP:',str(xp))
+        print('Player Strength: ',str(strength))
+        move_on=input('Hit enter to exit: ')
     def clear_cache():
         global dev
         if dev==True:
@@ -915,6 +1271,7 @@ if password=="123456":
                 print('You got 4 throwing rocks.')
                 throwing_rocks+=4
                 spears-=1
+        move_on=input('Hit enter to exit: ')
     def non_function():
         clear()
         print('This function has not yet been implemented. Sorry for the inconvience.')
@@ -951,7 +1308,8 @@ if password=="123456":
                 show_error()
                 error_some=True
             try:
-                amount=int(input('How much would you like to sell: '))
+                if error_some==False:
+                    amount=int(input('How much would you like to sell: '))
             except:
                 show_error()
                 error_some=True
@@ -970,7 +1328,8 @@ if password=="123456":
                     print('Your current balance:',money)
                 else:
                     print('You don\'t have enough',list1[choice])
-            move_on=input('Hit enter to exit:')
+            if error_some==False:
+                move_on=input('Hit enter to exit:')
         if choice == "3":
             clear()
             print('System: Price is per item. Not for the total.')
@@ -996,7 +1355,8 @@ if password=="123456":
                 show_error()
                 error_some=True
             try:
-                amount=int(input('How much would you like to buy: '))
+                if error_some==False:
+                    amount=int(input('How much would you like to buy: '))
             except:
                 show_error()
                 error_some=True
@@ -1015,7 +1375,8 @@ if password=="123456":
                     print('Your current balance:',money)
                 else:
                     print('You don\'t have enough money.')
-            move_on=input('Hit enter to exit:')
+            if error_some==False:
+                move_on=input('Hit enter to exit:')
         if choice == "2":
             clear()
             trade()
@@ -1038,7 +1399,8 @@ if password=="123456":
                         good_batteries+=int(choice)
                         bad_batteries-=int(choice)
                         print('Charged',int(choice),'batteries. You now have',good_batteries,'charged batteries.')
-                        time.sleep(2.5)
+                        print('Current balance: '+str(money))
+                        move_on=input('Hit enter to exit: ')
                         i_have_the_power=True
             except:
                 show_error()
@@ -1139,13 +1501,17 @@ if password=="123456":
             time.sleep(1.5) #Adjust time as needed
         clear()
     def item_damage():
-        global throwing_rocks_damage, spears_damage, pickaxe_damage, machete_damage
-        print('Throwing Rocks: '+str(throwing_rocks_damage[0])+'-'+str(throwing_rocks_damage[1])+' HP')
-        print('Spears: '+str(spears_damage[0])+'-'+str(spears_damage[1])+' HP')
-        print('Pickaxe: '+str(pickaxe_damage[0])+'-'+str(pickaxe_damage[1])+' HP')
-        print('Machete: '+str(machete_damage[0])+'-'+str(machete_damage[1])+' HP')
-        print('Frying pan: '+str(frying_pan_damage[0])+'-'+str(frying_pan_damage[1])+' HP')
-        print('Dagger: '+str(dagger_damage[0])+'-'+str(dagger_damage[1])+' HP')
+        try:
+            global throwing_rocks_damage, spears_damage, pickaxe_damage, machete_damage, frying_pan_damage, dagger_damage
+            print('Throwing Rocks: '+str(throwing_rocks_damage[0])+'-'+str(throwing_rocks_damage[1])+' HP')
+            print('Spears: '+str(spears_damage[0])+'-'+str(spears_damage[1])+' HP')
+            print('Pickaxe: '+str(pickaxe_damage[0])+'-'+str(pickaxe_damage[1])+' HP')
+            print('Machete: '+str(machete_damage[0])+'-'+str(machete_damage[1])+' HP')
+            print('Frying pan: '+str(frying_pan_damage[0])+'-'+str(frying_pan_damage[1])+' HP')
+            print('Dagger: '+str(dagger_damage[0])+'-'+str(dagger_damage[1])+' HP')
+            move_on=input('Hit enter to exit: ')
+        except:
+            show_error()
     def start_attack():
         global health, attack, throwing_rocks, victory_status, wires, torches, one_time, enemy, current_enemy, battery, custom_attack
         victory_status=False
@@ -1226,16 +1592,16 @@ if password=="123456":
             if choice == "exit":
                 exit_choice=True
                 error_some=True
-            if exit_choice==False:
+            elif exit_choice==False:
                 choice=int(choice)
                 if choice>1:
                     list2='story_part'+str(choice-1)
                 if choice==1:
                     list2='begin'
         except:
+            error_some=True
             if error_message_skip==False:
                 show_error()
-            error_some=True
         if error_some==False:
             choice-=1
             p=True
@@ -1251,7 +1617,8 @@ if password=="123456":
             except:
                 pass
             globals()[list2]=True
-        skip = input('Hit enter to exit:')
+        if error_some==False:
+            move_on = input('Hit enter to exit:')
     def open_menu():
         global menu_open, sticks, coal, torches, working_battery_charger, battery_charger, wires, computer_chips
         if menu_open==False:
@@ -1711,7 +2078,7 @@ if password=="123456":
             dev=True
             menu_open=True
             bag_open=True
-        if name=='skip':
+        elif name=='skip':
             skip=True
             print('-Choose an option-')
             print('bag')
@@ -1736,6 +2103,8 @@ if password=="123456":
                 time.sleep(1)
             if check == "battery_percent":
                 battery_bag()
+        else:
+            skip=False
     if skip==False:
         print('Game will start soon.')
         time.sleep(3)
@@ -1979,19 +2348,22 @@ if password=="123456":
                         if "_" in check:
                             check=check.replace("_"," ")
                 clear()
-                if check == "other":
+                if check in other_input:
                     print('Note: Most or all of these functions are either not complete or have not been started.')
                     print('Your options:')
+                    print('Next Update')
                     print('Buildings')
                     print('Generators')
                     print('Calendar')
                     print('Time travel')
                     check = input('Choose an option: ').lower()
-                if check == "show sell":
+                if check in next_update_input:
+                    next_update()
+                if check in show_sell_input:
                     if dev==True:
                         variables.show_sell()
                         move_on=input('Hit enter to exit: ')
-                if check == "show buy":
+                if check in show_buy_input:
                     if dev==True:
                         variables.show_buy()
                         move_on=input('Hit enter to exit: ')
@@ -2061,12 +2433,38 @@ if password=="123456":
                     except:
                         pass
                 if check in practice_input:
-                    #This function will allow users to work on their strength to allow more damage with select weapons in battle.
-                    if dev==True:
-                        print("Sorry Dev. I haven't done this yet.")
-                        move_on=input('Hit enter to exit: ')
-                    if dev==False:
-                        non_function()
+                    current_var=['push_up_practice','lift_rocks_practice']
+                    print("Current Strength: ",strength)
+                    print('Choose a way to work out: ')
+                    print('(1)Push Ups\n(2)Lift Rocks')
+                    try:
+                        choice = int(input('Choose an option or enter to leave: '))
+                        choice-=1
+                        hello=current_var[choice]
+                        clear()
+                        print("Please wait. You need some time to do some things...\n")
+                        things_to_print=['Mixing up your music...','Pushing yourself beyond your own limits...','Using your anger for good...','Fighting with yourself...','Thinking of your life...','Making new friends2...','Rethinking your attitude towards others...','Saying sorry to ones you hurt...','Remebering the good times...','Ignoring what others say...','Moving away from others problems...','Wiping away the sweat...','Letting the past be the past...','Realizing who you really are...']
+                        things_printed=[]
+                        time.sleep(2)
+                        for i in range(4):
+                            p=True
+                            while p==True:
+                                abc=random.choice(things_to_print)
+                                if abc not in things_printed:
+                                    things_printed.append(abc)
+                                    print(abc)
+                                    time.sleep(3.5)
+                                    p=False
+                        move_on=input('Hit enter to continue: ')
+                        clear()
+                        print('Finished your workout.')
+                        print('You gained',globals()[hello],'strength points')
+                        strength+=globals()[hello]
+                    except:
+                        pass
+                    if choice in no_input:
+                        print('Okay.')
+                    move_on=input('Hit enter to exit: ')
                 if check in exit_dev_mode_input:
                     choice = input('Are you sure: ').lower()
                     clear()
@@ -2081,71 +2479,68 @@ if password=="123456":
                 if check in clear_cache_input:
                     clear_cache()
                 if check in sleep_input:
-                    if dev==False:
-                        non_function()
-                    if dev==True:
-                        print('Sleeping...')
-                        sleep(4)
-                        up_down=random.uniform(-2,2)
-                        if up_down<0:
-                            print('Prices have gone down',round(up_down,2))
-                            coal_buy-=round(up_down,2)
-                            coal_sell-=round(up_down,2)
-                            computer_chips_buy-=round(up_down,2)
-                            computer_chips_buy-=round(up_down,2)
-                            wires_buy-=round(up_down,2)
-                            wires_sell-=round(up_down,2)
-                            good_batteries_buy-=round(up_down,2)
-                            good_batteries_sell-=round(up_down,2)
-                            bad_batteries_buy-=round(up_down,2)
-                            bad_batteries_sell-=round(up_down,2)
-                            sticks_buy-=round(up_down,2)
-                            sticks_sell-=round(up_down,2)
-                            throwing_rocks_buy-=round(up_down,2)
-                            throwing_rocks_sell-=round(up_down,2)
-                            spears_buy-=round(up_down,2)
-                            spears_sell-=round(up_down,2)
-                            torches_buy-=round(up_down,2)
-                            torches_sell-=round(up_down,2)
-                            pickaxe_buy-=round(up_down,2)
-                            pickaxe_sell-=round(up_down,2)
-                            machete_buy-=round(up_down,2)
-                            machete_sell-=round(up_down,2)
-                            frying_pan_sell-=round(up_down,2)
-                            frying_pan_buy-=round(up_down,2)
-                            dagger_buy-=round(up_down,2)
-                            dagger_sell-=round(up_down,2)
-                        if up_down>0:
-                            print('Prices have gone up',round(up_down,2))
-                            coal_buy+=round(up_down,2)
-                            coal_sell+=round(up_down,2)
-                            computer_chips_buy+=round(up_down,2)
-                            computer_chips_buy+=round(up_down,2)
-                            wires_buy+=round(up_down,2)
-                            wires_sell+=round(up_down,2)
-                            good_batteries_buy+=round(up_down,2)
-                            good_batteries_sell+=round(up_down,2)
-                            bad_batteries_buy+=round(up_down,2)
-                            bad_batteries_sell+=round(up_down,2)
-                            sticks_buy+=round(up_down,2)
-                            sticks_sell+=round(up_down,2)
-                            throwing_rocks_buy+=round(up_down,2)
-                            throwing_rocks_sell+=round(up_down,2)
-                            spears_buy+=round(up_down,2)
-                            spears_sell+=round(up_down,2)
-                            torches_buy+=round(up_down,2)
-                            torches_sell+=round(up_down,2)
-                            pickaxe_buy+=round(up_down,2)
-                            pickaxe_sell+=round(up_down,2)
-                            machete_buy+=round(up_down,2)
-                            machete_sell+=round(up_down,2)
-                            frying_pan_sell+=round(up_down,2)
-                            frying_pan_buy+=round(up_down,2)
-                            dagger_buy+=round(up_down,2)
-                            dagger_sell+=round(up_down,2)
-                        if up_down==0:
-                            print('No price change.')
-                        move_on=input('Hit enter to exit: ')
+                    print('Sleeping...')
+                    sleep(4)
+                    up_down=random.uniform(-2,2)
+                    if up_down<0:
+                        print('Prices have gone down',round(up_down,2))
+                        coal_buy-=round(up_down,2)
+                        coal_sell-=round(up_down,2)
+                        computer_chips_buy-=round(up_down,2)
+                        computer_chips_buy-=round(up_down,2)
+                        wires_buy-=round(up_down,2)
+                        wires_sell-=round(up_down,2)
+                        good_batteries_buy-=round(up_down,2)
+                        good_batteries_sell-=round(up_down,2)
+                        bad_batteries_buy-=round(up_down,2)
+                        bad_batteries_sell-=round(up_down,2)
+                        sticks_buy-=round(up_down,2)
+                        sticks_sell-=round(up_down,2)
+                        throwing_rocks_buy-=round(up_down,2)
+                        throwing_rocks_sell-=round(up_down,2)
+                        spears_buy-=round(up_down,2)
+                        spears_sell-=round(up_down,2)
+                        torches_buy-=round(up_down,2)
+                        torches_sell-=round(up_down,2)
+                        pickaxe_buy-=round(up_down,2)
+                        pickaxe_sell-=round(up_down,2)
+                        machete_buy-=round(up_down,2)
+                        machete_sell-=round(up_down,2)
+                        frying_pan_sell-=round(up_down,2)
+                        frying_pan_buy-=round(up_down,2)
+                        dagger_buy-=round(up_down,2)
+                        dagger_sell-=round(up_down,2)
+                    if up_down>0:
+                        print('Prices have gone up',round(up_down,2))
+                        coal_buy+=round(up_down,2)
+                        coal_sell+=round(up_down,2)
+                        computer_chips_buy+=round(up_down,2)
+                        computer_chips_buy+=round(up_down,2)
+                        wires_buy+=round(up_down,2)
+                        wires_sell+=round(up_down,2)
+                        good_batteries_buy+=round(up_down,2)
+                        good_batteries_sell+=round(up_down,2)
+                        bad_batteries_buy+=round(up_down,2)
+                        bad_batteries_sell+=round(up_down,2)
+                        sticks_buy+=round(up_down,2)
+                        sticks_sell+=round(up_down,2)
+                        throwing_rocks_buy+=round(up_down,2)
+                        throwing_rocks_sell+=round(up_down,2)
+                        spears_buy+=round(up_down,2)
+                        spears_sell+=round(up_down,2)
+                        torches_buy+=round(up_down,2)
+                        torches_sell+=round(up_down,2)
+                        pickaxe_buy+=round(up_down,2)
+                        pickaxe_sell+=round(up_down,2)
+                        machete_buy+=round(up_down,2)
+                        machete_sell+=round(up_down,2)
+                        frying_pan_sell+=round(up_down,2)
+                        frying_pan_buy+=round(up_down,2)
+                        dagger_buy+=round(up_down,2)
+                        dagger_sell+=round(up_down,2)
+                    if up_down==0:
+                        print('No price change.')
+                    move_on=input('Hit enter to exit: ')
                 if check in load_settings_input:
                     if dev==True:
                         clear()
@@ -2258,6 +2653,11 @@ if password=="123456":
                     save.write('\nchars_in_line = '+str(chars_in_line))
                     save.write('\nrun_off = '+str(run_off))
                     save.write('\nerror_message = '+str(error_message))
+                    save.write('\nlevel = '+str(level))
+                    save.write('\nxp = '+str(xp))
+                    save.write('\nstrength = '+str(strength))
+                    save.write('\npush_up_practice = '+str(push_up_practice))
+                    save.write('\nlift_rocks_practice = '+str(lift_rocks_practice))
                     save.write('\nbegin = '+str(begin))
                     save.write('\nday_lock1 = '+str(day_lock1))
                     save.write('\nday_lock2 = '+str(day_lock2))
@@ -2327,6 +2727,8 @@ if password=="123456":
                     save.write("\nspears_damage=[11,17]")
                     save.write("\npickaxe_damage=[15,19]")
                     save.write("\nmachete_damage=[17,23]")
+                    save.write("\nfrying_pan_damage=[11,15]")
+                    save.write("\ndagger_damage=[17, 23]")
                     save.write('\nred_gem = '+str(red_gem))
                     save.write('\ngreen_gem = '+str(green_gem))
                     save.write('\nmagenta_gem = '+str(magenta_gem))
@@ -2402,13 +2804,13 @@ if password=="123456":
                     if guts_and_glory==True or dev==True:
                         collisseum()
                     if guts_and_glory==False and dev==False:
-                        non_function()
+                        print('You must complete the (Guts And Glory) award to unlock this menu.')
+                        move_on=input('Hit enter to exit: ')
                 if check in shop_input:
                     shop()
                     check=''
                 if check in damage_input:
                     item_damage()
-                    move_on=input('Hit enter to exit: ')
                     check=''
                 if check in settings_input:
                     settings()
