@@ -4,19 +4,20 @@ Then converted to python 3.
 
 Creator: Brandon Robinson
 
-Code Updated Date: 10/31/21
+Code Updated Date: 11/03/21
 
-Current Version: 0.2.9
+Current Version: 0.3.0
 
-Next Version: 0.3.0 #This will be a Patch Version
+Next Version: 0.3.1 #This version may include new chapters, new items, and/or new features.
 
-Github Updated Date: 11/03/21 7:49 AM Eastern Time
+Github Updated Date: 11/03/21 7:59 AM Eastern Time
 
 Files updated:
   1. Other stuff/patch_notes_next.txt
-  2. Current_Version/error_stuff.py
+  2. Other stuff/error_stuff.py
   3. Current_Version/main.py
   4. Current_Version/Save.gsf
+  5. Current_Version/error_stuff.py
 
 Files created:
   1. Older_Versions/Version 0.2.9
@@ -27,7 +28,7 @@ Files removed:
   2. Version History.txt
 
 Things to note:
-  1. None
+  1. Version update!
 
 Save file problems:
   1. Make sure the save file is exactly named "Save.gsf".
@@ -38,13 +39,13 @@ file will not work.
   5. If a save file will no longer load. Try making a new one with save_file_maker.py.
 
 To start the game:
-1. To start the game. You need to change the file name Version #.#.#.py to main.py.
-2. Then in the file renamed to main.py change the variable (path) to the directory where all the game files will be stored.
-3. Make sure path has 2 slashes instead of 1.
-4. Check to see if you are running python 2 or 3. Python 2 is not compatible with this version.
-5. Make sure you have a compatible save file(Save.gsf).
-6. If dev mode is enabled and you encounter problems try disabling it either with the variable or in the game menu.
-7. Play the game.
+  1. To start the game. You need to change the file name Version #.#.#.py to main.py.
+  2. Then in the file renamed to main.py change the variable (path) to the directory where all the game files will be stored.
+  3. Make sure path has 2 slashes instead of 1.
+  4. Check to see if you are running python 2 or 3. Python 2 is not compatible with this version.
+  5. Make sure you have a compatible save file(Save.gsf).
+  6. If dev mode is enabled and you encounter problems try disabling it either with the variable or in the game menu.
+  7. Play the game.
 
 Files required to start:
   1. Save.gsf
