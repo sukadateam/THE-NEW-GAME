@@ -11,5 +11,7 @@ Current Version 0.3.0
   10. Added new variables to save function.
   11. Added arguments (new_save) and (new_error_stuff) on game startup.
   12. Game will now attempt to remove __pycache__ folder from game directory.
+  13. Cleaned and organized updates function.
+  14. Users can now see what is expected to come in the next big update. Next Update shows in other.
 Error Stuff:
   1. Added new items but have no purpose currently.
