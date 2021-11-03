@@ -10,13 +10,18 @@ Current Version: 0.2.9
 
 Next Version: 0.3.0 #This will be a Patch Version
 
-Github Updated Date: 11/01/21 9:39 AM Eastern Time
+Github Updated Date: 11/03/21 7:49 AM Eastern Time
 
 Files updated:
   1. patch_notes_next.txt
+  2. error_stuff.py
 
 Files created:
   1. None
+
+Files removed:
+  1. Version Code.py
+  2. Version History.txt
 
 Things to note:
   1. None
