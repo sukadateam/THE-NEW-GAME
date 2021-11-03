@@ -13,8 +13,10 @@ Next Version: 0.3.0 #This will be a Patch Version
 Github Updated Date: 11/03/21 7:49 AM Eastern Time
 
 Files updated:
-  1. Current_Version/patch_notes_next.txt
+  1. Other stuff/patch_notes_next.txt
   2. Current_Version/error_stuff.py
+  3. Current_Version/main.py
+  4. Current_Version/Save.gsf
 
 Files created:
   1. Older_Versions/Version 0.2.9
