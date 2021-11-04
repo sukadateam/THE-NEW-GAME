@@ -10,25 +10,19 @@ Current Version: 0.3.0
 
 Next Version: 0.3.1 #This version may include new chapters, new items, and/or new features.
 
-Github Updated Date: 11/03/21 7:59 AM Eastern Time
+Github Updated Date: 11/04/21 10:11 AM Eastern Time
 
 Files updated:
   1. Other stuff/patch_notes_next.txt
-  2. Other stuff/error_stuff.py
-  3. Current_Version/main.py
-  4. Current_Version/Save.gsf
-  5. Current_Version/error_stuff.py
 
 Files created:
-  1. Older_Versions/Version 0.2.9
-  2. Older_Versions/Version 0.3.0 #Current Version
+  1. None
 
 Files removed:
-  1. Version Code.py
-  2. Version History.txt
+  1. None
 
 Things to note:
-  1. Version update!
+  1. None
 
 Save file problems:
   1. Make sure the save file is exactly named "Save.gsf".
