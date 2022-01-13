@@ -4,9 +4,9 @@ Then converted to python 3.
 
 Creator: Brandon Robinson
 
-Code Updated Date: 11/03/21
+Code Updated Date: 01/13/21 8:19 AM Eastern Time
 
-Github Updated Date: 01/13/21 6:49 AM Eastern Time
+Github Updated Date: 01/13/21 8:19 AM Eastern Time
 
 Files updated:
   1. Other stuff/patch_notes_next.txt
