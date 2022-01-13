@@ -6,23 +6,20 @@ Creator: Brandon Robinson
 
 Code Updated Date: 11/03/21
 
-Current Version: 0.3.0
-
-Next Version: 0.3.1 #This version may include new chapters, new items, and/or new features.
-
-Github Updated Date: 11/04/21 10:11 AM Eastern Time
+Github Updated Date: 01/13/21 6:49 AM Eastern Time
 
 Files updated:
   1. Other stuff/patch_notes_next.txt
 
 Files created:
-  1. None
+  1. get_directory.py
 
 Files removed:
   1. None
 
 Things to note:
-  1. None
+  1. Fixed WindowsError on line 423
+  2. Time travel now does something.
 
 Save file problems:
   1. Make sure the save file is exactly named "Save.gsf".
