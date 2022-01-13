@@ -3,7 +3,8 @@
 import os, random, time, sys
 #Game setup
 dev=False
-path='\\Users\\brobi\\Desktop\\game'
+import get_directory
+from directory import path
 os.chdir(path)
 version = '0.3.0'
 story_amount=12
@@ -419,7 +420,7 @@ if works==True:
         os.rename("Save.py","Save.gsf")
         try:
             os.remove("Save.pyc")
-        except WindowsError:
+        except:
             pass
 def show_error():
     if error_message==True:
@@ -2387,9 +2388,22 @@ if password=="123456":
                     print("You can build your own city.")
                     move_on=input('Hit enter to exit: ')
                 if check in time_travel_input:
-                    print("Note: Feature not yet set")
-                    print('\nFeature idea:')
-                    print("You can travel to other days in the year using this feature.")
+                    if dev==False:
+                        print("Note: Feature not yet set")
+                        print('\nFeature idea:')
+                        print("You can travel to other days in the year using this feature.")
+                    else:
+                        days=['nocobot','peachflame','novonoid','wetchop','vasco','yodacloud','looplab','nalpure','zestpond','checknology','fireshine']
+                        number=random.randint(0, len(days))
+                        print('You traveled to the day:',days[number])
+                        print('')
+                        story=random.randint(1, 3)
+                        if story==1:
+                            print('This time period seems to be empty. As in, there is nobody around. You scream trying to get someones attention,, but to no avial.')
+                        if story==2:
+                            print('A beutiful young lady catches your attention. You get so caught into her gaze that you forget what you were doing. Zoning out so much that time ran out and you were ported back home. You miss that lady so much. She could have been the love of your life.')
+                        if story==3:
+                            print('You look around to examine the past. In the crowd of people, you see your younger self with your parents that died when you were 8. Balling your eyes out, you don\'t realize you pasted out and that never happened. It was all in your head.')
                     move_on=input('Hit enter to exit: ')
                 if check in calendar_input:
                     clear()
